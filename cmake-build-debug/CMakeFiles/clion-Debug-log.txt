@@ -1,0 +1,36 @@
+"C:\Program Files\JetBrains\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2025.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\lacer\CLionProjects\DataStructure-UESC -B C:\Users\lacer\CLionProjects\DataStructure-UESC\cmake-build-debug
+-- The C compiler identification is MSVC 19.43.34808.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: 'C:/Users/lacer/CLionProjects/DataStructure-UESC/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qk3tzr'
+    
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2025.1/bin/ninja/win/x64/ninja.exe" -v cmTC_c16db
+    [1/2] C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1443~1.348\bin\Hostx64\x64\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\cmTC_c16db.dir\testCCompiler.c.obj /FdCMakeFiles\cmTC_c16db.dir\ /FS -c C:\Users\lacer\CLionProjects\DataStructure-UESC\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-qk3tzr\testCCompiler.c
+    [2/2] C:\Windows\system32\cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --msvc-ver=1943 --intdir=CMakeFiles\cmTC_c16db.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1443~1.348\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_c16db.dir\testCCompiler.c.obj  /out:cmTC_c16db.exe /implib:cmTC_c16db.lib /pdb:cmTC_c16db.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+    FAILED: cmTC_c16db.exe 
+    C:\Windows\system32\cmd.exe /C "cd . && "C:\Program Files\JetBrains\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --msvc-ver=1943 --intdir=CMakeFiles\cmTC_c16db.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1443~1.348\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_c16db.dir\testCCompiler.c.obj  /out:cmTC_c16db.exe /implib:cmTC_c16db.lib /pdb:cmTC_c16db.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+    RC Pass 1: command "rc /fo CMakeFiles\cmTC_c16db.dir/manifest.res CMakeFiles\cmTC_c16db.dir/manifest.rc" failed (exit code 0) with the following output:
+    no such file or directory
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
