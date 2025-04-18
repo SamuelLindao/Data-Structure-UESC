@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 struct celula {
     int info;
@@ -16,10 +17,13 @@ void printfList(tpNo *list) {
 }
 
 int main(void) {
-    tpNo *p = NULL;
-    tpNo *q = NULL;
+    tpNo *p = (tpNo*)malloc(sizeof(tpNo));
+    tpNo *q =  (tpNo*)malloc(sizeof(tpNo));
     p->info = 1;
     p->prox = q;
+
+    q->info = 2;
+    q->prox = NULL;
     printfList(p);
 
     return 0;
