@@ -7,6 +7,10 @@ struct celula {
 };
 
 typedef  struct celula tpNo;
+typedef struct {
+    tpNo *head;
+    int size;
+} tpLista;
 
 void printfList(tpNo *list) {
     tpNo *p = list;
@@ -16,7 +20,15 @@ void printfList(tpNo *list) {
     }
 }
 
+tpLista * createList() {
+    tpLista *list = (tpLista*)malloc(sizeof(tpLista));
+    list->head = NULL;
+    list->size = 0;
+    return list;
+}
+
 int main(void) {
+    /*
     tpNo *p = (tpNo*)malloc(sizeof(tpNo));
     tpNo *q =  (tpNo*)malloc(sizeof(tpNo));
     p->info = 1;
@@ -25,6 +37,25 @@ int main(void) {
     q->info = 2;
     q->prox = NULL;
     printfList(p);
+    */
 
+    tpLista *list = createList();
+
+    for (int i = 0 ; i < 10 ; i++) {
+        tpNo *p = (tpNo*)malloc(sizeof(tpNo));
+        p->info = i;
+        p->prox = NULL;
+        if (list->head == NULL) {
+            list->head = p;
+        }
+        else {
+            tpNo *aux = list->head;
+            while (aux->prox != NULL) {
+                aux = aux->prox;
+            }
+            aux->prox = p;
+        }
+    }
+    printfList(list->head);
     return 0;
 }
