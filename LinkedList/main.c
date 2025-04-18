@@ -12,8 +12,8 @@ typedef struct {
     int size;
 } tpLista;
 
-void printfList(tpNo *list) {
-    tpNo *p = list;
+void printfList(tpLista *list) {
+    tpNo *p = list->head;
     while (p != NULL) {
         printf("%d\n", p->info);
         p = p->prox;
@@ -56,6 +56,6 @@ int main(void) {
             aux->prox = p;
         }
     }
-    printfList(list->head);
+    printfList(list);
     return 0;
 }
