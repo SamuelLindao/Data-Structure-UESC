@@ -1,0 +1,3 @@
+C:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg/cmake-build-debug/CMakeFiles/SortAlg.dir
+C:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/lacer/CLionProjects/DataStructure-UESC/StudentList/cmake-build-debug"
+			"value" : "c:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -447,7 +447,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/StudentList/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -519,7 +519,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/StudentList"
+			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -531,7 +531,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/StudentList"
+			"value" : "C:/Program Files (x86)/SortAlg"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/ninja/win/x64/ninja.exe"
+			"value" : "C:/Program Files/JetBrains/CLion 2025.1/bin/ninja/win/x64/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -747,7 +747,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "StudentList"
+			"value" : "SortAlg"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1142,7 +1142,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "StudentList_BINARY_DIR",
+			"name" : "SortAlg_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1151,10 +1151,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/StudentList/cmake-build-debug"
+			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg/cmake-build-debug"
 		},
 		{
-			"name" : "StudentList_IS_TOP_LEVEL",
+			"name" : "SortAlg_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1166,7 +1166,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "StudentList_SOURCE_DIR",
+			"name" : "SortAlg_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1175,7 +1175,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/StudentList"
+			"value" : "C:/Users/lacer/CLionProjects/DataStructure-UESC/SortAlg"
 		},
 		{
 			"name" : "_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED",
