@@ -28,34 +28,37 @@ tpLista * createList() {
 }
 
 int main(void) {
-    /*
-    tpNo *p = (tpNo*)malloc(sizeof(tpNo));
+
+    tpNo p;
+   // tpNo *p = (tpNo*)malloc(sizeof(tpNo));
     tpNo *q =  (tpNo*)malloc(sizeof(tpNo));
-    p->info = 1;
-    p->prox = q;
+    p.info = 1;
+    p.prox = q;
 
     q->info = 2;
     q->prox = NULL;
-    printfList(p);
-    */
+    tpLista *lista = createList();
+    lista->head = &p;
+    printfList(lista);
 
-    tpLista *list = createList();
 
-    for (int i = 0 ; i < 10 ; i++) {
-        tpNo *p = (tpNo*)malloc(sizeof(tpNo));
-        p->info = i;
-        p->prox = NULL;
-        if (list->head == NULL) {
-            list->head = p;
-        }
-        else {
-            tpNo *aux = list->head;
-            while (aux->prox != NULL) {
-                aux = aux->prox;
-            }
-            aux->prox = p;
-        }
-    }
-    printfList(list);
+    // tpLista *list = createList();
+    //
+    // for (int i = 0 ; i < 10 ; i++) {
+    //     tpNo *p = (tpNo*)malloc(sizeof(tpNo));
+    //     p->info = i;
+    //     p->prox = NULL;
+    //     if (list->head == NULL) {
+    //         list->head = p;
+    //     }
+    //     else {
+    //         tpNo *aux = list->head;
+    //         while (aux->prox != NULL) {
+    //             aux = aux->prox;
+    //         }
+    //         aux->prox = p;
+    //     }
+    // }
+    // printfList(list);
     return 0;
 }
