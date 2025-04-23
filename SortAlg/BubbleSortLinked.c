@@ -26,6 +26,8 @@ void Bubblesort(Node *head, Node *tail)
 
         current = current->next;
     }
+    if (trocou == 0) return;
+
     Bubblesort(current, anterior);
 }
 
