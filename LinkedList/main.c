@@ -4,6 +4,7 @@
 struct celula {
     int info;
     struct celula *prox;
+    struct celula *anterior;
 };
 
 typedef  struct celula tpNo;
@@ -29,18 +30,12 @@ tpLista * createList() {
 
 int main(void) {
 
-    tpNo p;
-   // tpNo *p = (tpNo*)malloc(sizeof(tpNo));
-    tpNo *q =  (tpNo*)malloc(sizeof(tpNo));
-    p.info = 1;
-    p.prox = q;
-
-    q->info = 2;
-    q->prox = NULL;
-    tpLista *lista = createList();
-    lista->head = &p;
-    printfList(lista);
-
+    tpNo *lde;
+    lde = NULL;
+    tpNo *next = (tpNo*)malloc(sizeof(tpNo));
+    lde->prox = next;
+    lde->anterior = lde;
+    
 
     // tpLista *list = createList();
     //
