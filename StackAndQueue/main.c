@@ -23,7 +23,7 @@ Stack* create(void) {
 }
 
 void push(Stack*p, int v) {
-    List *new = (Stack*)malloc(sizeof(Stack));
+    List *new = (List*)malloc(sizeof(List));
     new->data = v;
     new->next = p->top;
     p->top = new;
@@ -52,6 +52,52 @@ void free_stack(Stack *p) {
 
     free(t);
 
+}
+
+//Queue
+struct queue {
+    List *front;
+    List *rear;
+};
+
+typedef struct queue Queue;
+
+Queue* createQ(void) {
+    Queue *q = (Queue*)malloc(sizeof(Queue));
+    q->front = NULL;
+    q->rear = NULL;
+    return q;
+
+}
+
+void insert(Queue *q, int v) {
+    List *new = (List*)malloc(sizeof(List));
+    new->data = v;
+    new->next = q->front;
+    if (q->front == NULL) {
+        q->front = new;
+    }
+    q->rear = new;
+
+
+}
+
+int remove(Queue *q) {
+    List *taux;
+    int v;
+    if (q->front == NULL) {
+        printf("Queue is empty\n");
+        return 1;
+    }
+    taux = q->front;
+    v = taux->data;
+    q->front = taux->next;
+
+    if (q->front == NULL) {
+        q->rear = NULL;
+    }
+    free(taux);
+    return v;
 }
 int main(void) {
     printf("Hello, World!\n");
