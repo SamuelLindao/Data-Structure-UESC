@@ -47,11 +47,17 @@ int insert(tprStack *stack, int data)
     stack->n++;
     return 1;
 }
-
+tprStack *initStack()
+{
+    tprStack *stack = (tprStack*)malloc(sizeof(tprStack));
+    stack->top = NULL;
+    stack->n = 0;
+    return stack;
+}
 
 int main()
 {
-    tprStack *stack = (tprStack*)malloc(sizeof(tprStack));
+    tprStack *stack = initStack();
     stack->top = NULL;
     stack->n = 0;
     
