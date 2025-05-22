@@ -12,15 +12,20 @@ struct NO {
 
 typedef struct NO tpNo;
 
-tpNo *init() {
-    tpNo *no = (tpNo*)malloc(sizeof(tpNo));
-    no->esq = NULL;
-    no->dir = NULL;
+struct binary {
+    tpNo *root;
 
-    return no;
+};
+
+typedef struct binary tprBinary;
+
+tprBinary *init() {
+    tprBinary *tree = (tprBinary*)malloc(sizeof(tprBinary));
+    tree->root = NULL;
+    return tree;
 }
 
 int main(void) {
-    tpNo *binary = init();
+    tprBinary *tree = init();
     return 0;
 }
