@@ -67,6 +67,13 @@ void Insert(tprBinary *tree, int valor) {
 //         aux->dir = novo;
 //     }
 // }
+
+int ArvoreTamanho(tpNo *root) {
+
+    if (root == NULL) { return 0; }
+    printf("\n--%i", root->item.valor);
+    return 1 + ArvoreTamanho(root->esq) + ArvoreTamanho(root->dir);
+}
 int main(void) {
     tprBinary *tree = init();
     return 0;
