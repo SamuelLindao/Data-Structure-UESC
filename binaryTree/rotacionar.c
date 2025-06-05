@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+//Uma arvore sempre que estiver desbalanceada pode ser balanceada utilizando rotações para esquerda ou para direita
+//Se apos verificar o desiquilibrio for para direita então rotaciona a esquerda, se for para a esquerda rotacionan a direita.
 
 // Estrutura de um nó da árvore
 typedef struct No {
